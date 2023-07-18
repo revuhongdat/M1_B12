@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+</body>
+<script>
+  let value = +prompt("Nhập giá trị:");
+  let numbers = [1,2,3,4,1,6,7,8,9];
+  let index = '';
+  for (let i = 0; i < numbers.length; i++) {
+    if (value === numbers[i]) {
+      index += i + ",";
+    }
+  }
+  if(index!==""){
+    alert("Giá trị " + value + " tìm thấy tại vị trí index " + index + " của mảng!");
+  }
+  else{
+    alert("Giá trị " + value + " không thuộc mảng!");
+  }
+</script>
+</html>
